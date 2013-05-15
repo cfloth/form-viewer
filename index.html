@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Jquery Form Viewer Demo</title>
+
+        <link rel="stylesheet" href="css/formviewer.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+
+        <h1>Jquery Form Viewer Demo</h1>
+
+        <div class="storier">
+            <div class="box-left">
+
+                <form>
+                    <table class="form">
+                        <tr>
+                            <td><label>Color:</label></td>
+                            <td><input type="text" name="color" id="color" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Superlative (ending in "st"):</label></td>
+                            <td><input type="text" name="superlative" id="superlative" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Number:</label></td>
+                            <td><input type="text" name="number" id="number" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Adjective:</label></td>
+                            <td><input type="text" name="adjective1" id="adjective1" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Body Part (Plural):</label></td>
+                            <td><input type="text" name="bodyparts" id="bodyparts" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Body Part:</label></td>
+                            <td><input type="text" name="bodypart" id="bodypart" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Noun:</label></td>
+                            <td><input type="text" name="noun" id="noun" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Animal (Plural):</label></td>
+                            <td><input type="text" name="animals" id="animals" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Adjective:</label></td>
+                            <td><input type="text" name="adjective2" id="adjective2" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Adjective:</label></td>
+                            <td><input type="text" name="adjective3" id="adjective3" value="" /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label>Adjective:</label></td>
+                            <td><input type="text" name="adjective4" id="adjective4" value="" /></td>
+                        </tr>
+                    </table>
+
+                </form>
+            </div>
+
+            The <span class="fviewr-color">_____</span> Dragon is the <span class="fviewr-superlative">_____</span> Dragon of all. It has <span class="fviewr-number fviewr-towords">_____</span> wings <span class="fviewr-adjective1">_____</span> <span class="fviewr-bodyparts">_____</span>, and a <span class="fviewr-bodypart">_____</span> shaped like a <span class="fviewr-noun">_____</span>. It loves to eat <span class="fviewr-animals">_____</span>, although it will feast on nearly anything. It is <span class="fviewr-adjective2">_____</span> and <span class="fviewr-adjective3">_____</span>. You must be <span class="fviewr-adjective4">_____</span> around it, or you may end up as it`s meal! 
+            <br />
+            <br />
+            <small class="pull-right"><em>Story credit: <a href="http://www.madtakes.com/doglib.php?glibid=176">Mad Takes</a></em></small>
+        </div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+        <script src="jquery.formviewer.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function() {
+                $(".storier").formviewer({prefix: 'fviewr-'});
+            })
+        </script>
+
+    </body>
+</html>

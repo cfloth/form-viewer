@@ -1,0 +1,971 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+        <title>eShares</title>
+    
+
+    <!-- site ICO images -->
+    <link rel="shortcut icon" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/eshares/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="114x114" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/eshares/img/touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/eshares/img/touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/eshares/img/touch-icon-iphone.png" />
+
+    <!-- Fonts -->
+    <link rel="shortcut icon" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/googlecode/css/open_sans.css" />
+
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/eshares/css/icon_font.css?v=001" />
+    <!-- Bootstrap framework -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/bootstrap/css/bootstrap.css" />
+    <!-- pop-up notifications -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/sticky/sticky.css" />
+    <!-- tool tips -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/qtip2/jquery.qtip.css" />
+    <!-- datatable -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/datatables/css/demo_table.css" />
+    <!-- Jquery UI -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/jquery-ui/css/jquery-ui-1.9.2.custom.css" />
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/datepicker/datepicker.css" />
+    <!-- signaturepad -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/signature_pad/build/jquery.signaturepad.css" />
+    <!-- chosen -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/chosen/chosen.css" />
+    <!-- fileinput -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/fileinput/css/fileinput.css" />
+    <!-- eshares certificates CSS -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/eshares/css/certificate_image.css?v=001" />
+    <!-- tucked corners CSS -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/eshares/css/tucked_corners.css" />
+    <!-- eshares styles -->
+    <link rel="stylesheet" href="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/eshares/css/eshares.css?v=004" />
+    
+    <!-- eshares styles -->
+    <link rel="stylesheet" href="assets/css/formviewer.css?v=001" />
+    
+
+    
+        
+    
+
+    <!-- Shim to make HTML5 elements are usable in older Internet Explorer versions -->
+    <!--[if lt IE 9]>
+        <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/googlecode/js/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div id="idletimeout" class="alerttop">
+        For security, you will automatically be logged off in <span>20<!-- countdown place holder --></span>&nbsp;seconds due to inactivity.
+        <a id="idletimeout-resume" href="#">Click here to continue using eShares</a>.
+    </div>
+
+    <div id="maincontainer" class="clearfix">
+        <!-- header -->
+        <header>
+            <div class="navbar">
+                <div class="navbar-inner">
+                    
+
+
+
+
+
+
+
+            <div class="container-fluid">
+                <a class="brand" href="/">eShares</a>
+                <ul class="user_menu pull-right">
+                    <li class="user_img"><img src="https://www.filepicker.io/api/file/DXrlT6AoQcKe7T3jMfis/convert?w=250&amp;h=250&amp;fit=crop&amp;quality=75" /></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mary Stuart <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/entity/list/">My Entities</a></li>
+                            <li><a href="/profiles/profile/update/">My Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="/accounts/logout/">Log Out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    
+                    <li><a class="" href="/profiles/dashboard/">Dashboard</a></li>
+
+                    
+                        
+                        
+
+                        
+
+                        
+                            
+                        
+
+                        
+                            <li><a class=" " href="/profiles/to_sign/list/">Tasks<sup class="badge">1</sup></a></li>
+                        
+                    
+                    
+                    
+                    
+                    <li><a class="active" href="/corporations/list/">Corporations</a></li>
+                </ul>
+            </div>
+
+                </div>
+                <div class="appheader">
+                    
+    
+
+
+
+
+<div class="subspace">
+    <div class="subspace-container">
+        <div class="media corpdia">
+            <div class="img corpdia-logo">
+                <div class="corpdia-img" style="background-image: url('https://www.filepicker.io/api/file/rbXomECyRzwJOglVDgV9/convert?w=250&amp;h=250&amp;fit=crop&amp;quality=75');"></div>
+            </div>
+            <div class="bd">
+                <h2>Secondsight
+                    <small>
+                    
+                        <span class="cert new indent">
+                            <i class="ico-certificate small"></i> 1 New
+                        </span>
+                    
+                    
+                        <span class="cert indent">
+                            <i class="ico-certificate small"></i> 2 Total Valid
+                        </span>
+                    
+                        <span class="cert indent">
+                        </span>
+                    </small>
+                </h2>
+                <p>
+                    <small><em>
+                        <i class="ico-person small"></i> Owner
+                        
+                        <span class="indent">
+                            <i class="ico-arrow"></i> Last certificate issued on April 22, 2013
+                        </span>
+                        
+
+                        
+                        <span class="indent"><i class="ico-map small"></i> 
+                        395 University Ave,  
+                        350,  
+                        Palo Alto,  
+                        CA  
+                        94025  
+                        </span>
+                        
+                    </em></small>
+                    &nbsp;
+                </p>
+
+                <div class="subnav clearfix">
+                    <div class="subnav-content">
+                    <!-- If no Share Classes exist then display Create Share Class button -->
+                    
+                        
+                            
+                            
+                            
+                            
+
+                            <!-- Do not show Create Certificate button if on the Create Certificate page -->
+
+
+                        
+                    
+
+                        <ul class="menu clearfix">
+                            
+                            <li class=""><a href="/corporations/1/">
+                                Corporation Details
+                            </a></li>
+
+                            
+                                
+
+
+
+
+
+    <li class=""><a href="/corporations/1/share_classes/list/">Share Classes</a></li>
+
+
+                                
+                                    
+
+
+
+<li class=""><a href="/corporations/1/certificates/list/">Certificates</a></li>
+
+                                
+                            
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+        </header>
+
+        
+    <!-- Main content -->
+    <div id="contentwrapper">
+        <div class="main_content">
+            <form id="daForm" method="post">
+                <input type='hidden' name='csrfmiddlewaretoken' value='tIzc5LXrxJ0ykUM52T9nns3QVBEUAfwR' />
+
+                <!-- formset.errors: [] -->
+                <!-- form.errors:  -->
+
+                <div><input id="id_form-TOTAL_FORMS" name="form-TOTAL_FORMS" type="hidden" value="1" /><input id="id_form-INITIAL_FORMS" name="form-INITIAL_FORMS" type="hidden" value="0" /><input id="id_form-MAX_NUM_FORMS" name="form-MAX_NUM_FORMS" type="hidden" value="1000" /></div>
+
+                
+
+                
+                <div class="pull-right">
+                    <a href="/corporations/1/certificates/new/bulk/upload/8" class="btn btn-primary">Import CSV File</a>
+                </div>
+                
+
+                <h3 class="mv-downsm">
+                    
+                        New 'Series B' Certificate
+                    
+                </h3>
+
+                
+
+                
+
+                <!-- Notifications for missing signatory -->
+                
+
+                <!-- Notifications for cancelling certificates -->
+                
+
+                <!-- Notifications for voiding certificate before reissue -->
+                
+
+                
+
+                
+                    
+                        
+
+                        <div id="certificate0" class="certificate certform clearfix">
+
+                            <div class="cert-left">
+                                <div class="section section-pad section-nomargin">
+                                    <div class="form-horizontal">
+                                        <label class="control-label">Certificate Number <span class="asteriskField">*</span></label>
+                                        <div class="controls">
+                                            <div class="uncrispy_field">
+                                                
+
+
+	<div id="div_id_form-0-prefix" class="control-group">
+		
+			<label for="id_form-0-prefix" class="control-label requiredField">
+				Prefix<span class="asteriskField">*</span>
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <input class="textinput textInput" id="id_form-0-prefix" name="form-0-prefix" type="text" value="B" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                                <span class="uncrispy_text">-</span>
+                                                
+
+
+	<div id="div_id_form-0-prefix_number" class="control-group">
+		
+			<label for="id_form-0-prefix_number" class="control-label requiredField">
+				Prefix number<span class="asteriskField">*</span>
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <input class="textinput textInput" id="id_form-0-prefix_number" name="form-0-prefix_number" type="text" value="8" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                            </div>
+                                        </div>
+                                        
+
+
+	<div id="div_id_form-0-shareholder_name" class="control-group">
+		
+			<label for="id_form-0-shareholder_name" class="control-label requiredField">
+				Shareholder name<span class="asteriskField">*</span>
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <input class="textinput textInput" id="id_form-0-shareholder_name" name="form-0-shareholder_name" type="text" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                        <br/>
+                                        
+
+
+	<div id="div_id_form-0-shareholder_email" class="control-group">
+		
+			<label for="id_form-0-shareholder_email" class="control-label ">
+				Shareholder email
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <input class="textinput textInput" id="id_form-0-shareholder_email" name="form-0-shareholder_email" type="text" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                        
+
+
+	<div id="div_id_form-0-shareholder_email_confirm" class="control-group">
+		
+			<label for="id_form-0-shareholder_email_confirm" class="control-label ">
+				Confirm email
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <input class="textinput textInput" id="id_form-0-shareholder_email_confirm" name="form-0-shareholder_email_confirm" type="text" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                        <br/>
+                                        
+
+
+	<div id="div_id_form-0-quantity" class="control-group">
+		
+			<label for="id_form-0-quantity" class="control-label requiredField">
+				Quantity<span class="asteriskField">*</span>
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <input class="textinput textInput" id="id_form-0-quantity" name="form-0-quantity" type="text" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                        
+
+
+	<div id="div_id_form-0-issue_date" class="control-group">
+		
+			<label for="id_form-0-issue_date" class="control-label requiredField">
+				Issue date<span class="asteriskField">*</span>
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <input class="dateinput" id="id_form-0-issue_date" name="form-0-issue_date" type="text" value="05/05/2013" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                        
+
+
+	<div id="div_id_form-0-price" class="control-group">
+		
+			<label for="id_form-0-price" class="control-label ">
+				Price
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <input class="textinput textInput" id="id_form-0-price" name="form-0-price" type="text" value="0.500000" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                        
+
+
+	<input id="id_form-0-issued_by" name="form-0-issued_by" type="hidden" value="8" />
+
+
+                                        
+
+
+	<input id="id_form-0-corporation" name="form-0-corporation" type="hidden" value="1" />
+
+
+                                        
+
+
+	<input id="id_form-0-type" name="form-0-type" type="hidden" value="8" />
+
+
+                                        
+
+
+	<input id="id_form-0-signatory_left" name="form-0-signatory_left" type="hidden" value="3" />
+
+
+                                        
+
+
+	<input id="id_form-0-signatory_right" name="form-0-signatory_right" type="hidden" value="3" />
+
+
+                                    </div>
+                                    <div class="toggle masked clearfix">
+                                        <div class="control clearfix">
+                                            <i class="ico- control-icon"></i>
+                                            <div class="title">Add Optional Notes & Documents<br />
+                                                <small class="help-text">For example, Investor Rights Agreement & Stock Purchase&nbsp;Agreement</small>
+                                            </div>
+                                        </div>
+                                        <div class="mask">
+                                            <div class="bd">
+                                                
+
+
+	<div id="div_id_form-0-note_text" class="control-group">
+		
+			<label for="id_form-0-note_text" class="control-label ">
+				Notes
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <textarea class="textarea" cols="40" id="id_form-0-note_text" name="form-0-note_text" rows="3">
+</textarea>
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                                
+
+
+	<div id="div_id_form-0-note_file_url" class="control-group">
+		
+			<label for="id_form-0-note_file_url" class="control-label ">
+				Related Documents
+			</label>
+		
+    
+         
+
+        
+
+        
+            <div class="controls">
+                
+                    <input class="fpfilewidget" data-fp-apikey="AwMkDs2UPSEuLNxfyLLYKz" data-fp-button-class="btn" data-fp-maxSize="5242880" data-fp-mimetypes="*/*" data-fp-multiple="true" data-fp-option-services="COMPUTER, GOOGLE_DRIVE, DROPBOX, BOX" id="id_form-0-note_file_url" name="form-0-note_file_url" type="filepicker-dragdrop" />
+                    
+
+
+    
+
+
+
+
+    
+
+
+
+                
+            </div>
+        
+	</div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+
+	<input id="id_form-0-confirmable_ptr" name="form-0-confirmable_ptr" type="hidden" />
+
+
+                                </div>
+                            </div>
+
+                            
+
+
+
+<div class="cert-padding clearfix">
+
+    
+    <div class="certimg certflip-front cert-preferred">
+    
+
+        <div class="certimg-border">
+            <div class="certimg-bordertop"></div>
+            <div class="certimg-borderright"></div>
+            <div class="certimg-borderbottom"></div>
+            <div class="certimg-borderleft"></div>
+
+            <div class="certimg-cornertl"></div>
+            <div class="certimg-cornertr"></div>
+            <div class="certimg-cornerbl"></div>
+            <div class="certimg-cornerbr"></div>
+
+            
+
+            
+
+            
+
+            <div class="certimg-content">
+                
+                    
+                        <div class="certimg-heading" style="background-image: url('https://www.filepicker.io/api/file/rbXomECyRzwJOglVDgV9/convert?w=250&amp;h=250&amp;fit=clip&amp;quality=75');">
+                    
+                
+                    <div class="certimg-obj certimg-objshares">
+                        <div class="certimg-objlabel">
+                            <span class="certimg-objtxt">Shares</span>
+                        </div>
+                        <div class="certimg-objval"><span class="fview-id_form-0-quantity fview-highlight fview-addcommas">0</span></div>
+                    </div>
+                    <div class="certimg-obj certimg-objnumber">
+                        <div class="certimg-objlabel">
+                            <span class="certimg-objtxt">Number</span>
+                        </div>
+                        <div class="certimg-objval">
+                            <span class="fview-id_form-0-prefix fview-highlight certval-0-prefix"></span>-<span class="fview-id_form-0-prefix_number fdomview-highlight certval-0-prefix_number"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certimg-company">
+                    <h1>
+                        Secondsight
+                    </h1>
+                    Incorporated under the laws of the state of Delaware
+                </div>
+                
+                <div class="smore masked">
+                    <div class="mask">
+                
+                <div class="bd">
+                    This certifies that <strong><span class="certval-0-shareholder_name">__________</span></strong> is the owner of <strong><span class="fview-id_form-0-quantity fview-highlight fview-towords">Zero</span> (<span class="fview-id_form-0-quantity fview-highlight fview-addcommas">0</span>)</strong> fully paid and non-assessable shares of Preferred stock of Secondsight, transferable on the books of the Corporation in person or by duly authorized attorney upon surrender of the certificate properly endorsed. This Certificate and the shares represented hereby, are issued and shall be held subject to all of the provisions of the Certificate of Incorporation, as amended, and the By-Laws, as amended, of the Company, to all of which each holder, by acceptance hereof, asserts.<br />
+                    <br />
+                    Witness the electronic signatures of the Corporation's duly authorized offices.
+                </div>
+                
+                    </div>
+                    <div class="control">Show <span class="more">More</span><span class="less">Less</span> <i class="ico-"></i></div>
+                </div>
+                
+                <p>
+                    Dated: <span class="certval-0-issue_date"></span>
+                </p>
+                <p>
+                    <table width="100%">
+                        <tr>
+                            <td width="40%" class="certimg-sigspace">
+                                
+                                    <div class="sigPad_left signed">
+    <div class="sigWrapper">
+        <div class="typed"></div>
+        <canvas class="pad" width="100%" height="55"></canvas>
+    </div>
+    <p> <br></p>
+</div>
+                                
+                            </td>
+                            <td width="20%">&nbsp;</td>
+                            <td width="40%" class="certimg-sigspace">
+                                
+                                    <div class="sigPad_right signed">
+    <div class="sigWrapper">
+        <div class="typed"></div>
+        <canvas class="pad" width="100%" height="55"></canvas>
+    </div>
+    <p> <br></p>
+</div>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="txt-center">
+                                
+                                    Henry Ward<br/>
+                                    President
+                                
+                            </td>
+                            <td>&nbsp;</td>
+                            <td class="txt-center">
+                                
+                                    Henry Ward<br/>
+                                    Secretary
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+                        </div>
+
+                        
+                            <hr style="border-top: 1px dotted #e9e9e9;" />
+                        
+                    
+                
+
+                
+                    <div class="cert-padding alert alert-subtle"><small>
+                        <strong>What happens by clicking send?</strong> Each certificate is sent to the corporate officers for signatures.</small>
+                    </div>
+                    <div class="form-horizontal certificate certform certform-pad">
+                        <div class="control-group">
+                            <div class="controls">
+                                
+                                    <input type="submit" name="_again" value="Send Certificate" class="btn btn-primary" id="submit-id-create-new">
+                                
+                                <a href="/corporations/1/certificates/list/" class="cancel-link">Cancel</a>
+                            </div>
+                        </div>
+                    </div>
+                
+            </form>
+        </div>
+    </div>
+
+
+    </div> <!-- maincontainer -->
+    <div id="loading" style="display: none;"><img src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/eshares/css/img/loading.gif" /><br />Loading</div>
+
+    <!-- jQuery 1.8.1 -->
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/jquery/js/jquery.min.js"></script>
+    
+
+<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.6/zenbox.js"></script>
+<style type="text/css" media="screen, projection">
+  @import url(//assets.zendesk.com/external/zenbox/v2.6/zenbox.css);
+</style>
+<script type="text/javascript">
+  if (typeof(Zenbox) !== "undefined") {
+    Zenbox.init({
+      dropboxID:   "20160691",
+      url:         "https://eshares.zendesk.com",
+      tabID:       "ask_us",
+      tabText:     "Ask Us",
+      tabImageURL: "https://assets.zendesk.com/external/zenbox/images/tab_ask_us_right.png",
+      tabColor:    "#404A54",
+      tabPosition: "Right"
+    });
+  }
+</script>
+
+    
+    <!-- Filepicker.io JS -->
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/filepicker/js/filepicker.js" type="text/javascript"></script>
+    <!-- actual = get size of 'display:none' elements -->
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/jquery/js/jquery.actual.min.js" type="text/javascript"></script>
+    <!-- main bootstrap js -->
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- tooltips -->
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/qtip2/jquery.qtip.min.js" type="text/javascript"></script>
+    <!-- numbers to words -->
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/toword/toword.js" type="text/javascript"></script>
+    <!-- pop-up notifications JS -->
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/sticky/sticky.js" type="text/javascript"></script>
+    <!-- django form-related scripts -->
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/django_ajax_forms/js/jquery.ajax_forms.js" type="text/javascript"></script>
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/django_ajax_forms/js/jquery.ajax_forms.validation.js" type="text/javascript"></script>
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/jquery/js/jquery.formset.js" type="text/javascript"></script>
+
+    <!-- Idle Timeout -->
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/idle-timeout/jquery.idletimeout.js" type="text/javascript"></script>
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/idle-timeout/jquery.idletimer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $.idleTimeout("#idletimeout", "#idletimeout a", {
+            idleAfter: 604800,
+            pollingInterval: 604800/2,
+            keepAliveURL: "/common/keep_alive",
+            serverResponseEquals: 'OK',
+            onTimeout: function() {
+                window.location = "/accounts/logout/"
+            },
+            onIdle: function(){
+                // Show the warning bar
+                $(this).slideDown();
+            },
+            onCountdown: function(counter){
+                // Update the counter
+                $(this).find("span").html(counter);
+            },
+            onResume: function(){
+                // Hide the warning bar
+                $(this).slideUp();
+            }
+        });
+    </script>
+
+    <!-- eShares custom plugins/scripts -->
+    <!-- javascript date library -->
+    <!--
+    <script src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/js/date.js" type="text/javascript"></script>
+    -->
+
+    
+    <script type="text/javascript" src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/jquery-ui/js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/jquery-ui/js/jquery.ui.autocomplete.custom.js"></script>
+    <script type="text/javascript" src="https://s3.amazonaws.com/akiaioevngqlkt33w6rq.com.esharesinc.production.static_files/lib/datepicker/bootstrap-datepicker.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/jquery.formviewer.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+
+            // Initializing date picker
+            $('#id_form-0-issue_date').datepicker({
+                format: "mm/dd/yyyy",
+                autoclose: true
+            });
+
+            $("input[id$=shareholder_name]").autocomplete();
+
+            $(".certificate").formviewer({prefix: 'fview-'});
+        })
+    </script>
+
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-40602307-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+</body>
+</html>
